@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="VEPHand: View-Efficient Photometric Hand Performance Capture at Scale">
+  <meta name="keywords" content="4D Reconstruction, Hand Capture, Volumetric Registration, Density Regularization">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VEPHand: View-Efficient Photometric Hand Performance Capture at Scale</title>
+
+  <link href="static/css/bootstrap-4.4.1.css" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/rerun-viewer.css">
+  <link rel="stylesheet" href="./static/css/viewer-custom.css">
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title" style="margin-top: 0; margin-bottom: 10px;">VEPHand: View-Efficient Photometric Hand Performance Capture at Scale</h1>
+          <h2 class="title is-4 publication-title" style="color:#6e6e6e; margin-top: 5px; margin-bottom: 20px;">arXiv Preprint</h2>
+
+<div class="is-size-6 publication-authors" style="max-width: 800px; margin: 0 auto; line-height: 1.6;">
+    <span class="author-block"><a href="https://zyshen021.github.io/" target="_blank">Zhengyang Shen</a></span>&nbsp;&nbsp;
+    <span class="author-block"><a href="https://scholar.google.com/citations?user=PxnDELAAAAAJ&hl=en"
+        target="_blank">Kai-Hung Chang</a></span>&nbsp;&nbsp;
+    <span class="author-block"><a href="https://errollw.com/" target="_blank">Erroll Wood</a></span>&nbsp;&nbsp;
+    <span class="author-block"><a href="https://www.ics.uci.edu/~deyingk/" target="_blank">Deying
+        Kong</a></span>&nbsp;&nbsp;
+    <span class="author-block"><a href="https://scholar.google.com/citations?user=xqY0Do8AAAAJ&hl=en&oi=sra"
+        target="_blank">Bo
+        Peng</a></span>&nbsp;&nbsp;
+    <span class="author-block"><a href="https://sites.google.com/site/bolkartt/" target="_blank">Timo
+        Bolkart</a></span>&nbsp;&nbsp;
+    <span class="author-block"><a href="https://scholar.google.com/citations?user=HGt39SUAAAAJ&hl=en"
+        target="_blank">Jinlong Yang</a></span>&nbsp;&nbsp;
+    <span class="author-block">Bowen Zhao</span>&nbsp;&nbsp;
+    <span class="author-block"><a href="https://scholar.google.com/citations?user=9uxs6G4AAAAJ&hl=en"
+        target="_blank">Danhang Tang</a></span>&nbsp;&nbsp;
+    <span class="author-block"><a href="https://scholar.google.com/citations?user=fkoXlqEAAAAJ&hl=en" target="_blank">Sasa
+        Petrovic</a></span>&nbsp;&nbsp;
+    <span class="author-block"><a href="https://emreaksan.github.io/" target="_blank">Emre Aksan</a></span>&nbsp;&nbsp;
+    <span class="author-block"><a href="https://scholar.google.com/citations?user=FaLQzRAAAAAJ&hl=en" target="_blank">Jérémy
+        Rivière</a></span>&nbsp;&nbsp;
+    <span class="author-block"><a href="https://vchoutas.github.io/" target="_blank">Vassilis Choutas</a></span>&nbsp;&nbsp;
+    <span class="author-block"><a href="https://dvicini.github.io/" target="_blank">Delio Vicini</a></span>&nbsp;&nbsp;
+    <span class="author-block"><a href="https://scholar.google.com/citations?user=pIUyHQgAAAAJ&hl=en" target="_blank">Jay
+        Busch</a></span>&nbsp;&nbsp;
+    <span class="author-block"><a href="https://shichenliu.github.io/" target="_blank">Shichen Liu</a></span>&nbsp;&nbsp;
+    <span class="author-block"><a href="https://zhec.github.io/" target="_blank">Zhe Cao</a></span>&nbsp;&nbsp;
+    <span class="author-block"><a href="https://pages.cs.wisc.edu/~yinl/" target="_blank">Hugh Liu</a></span>&nbsp;&nbsp;
+    <span class="author-block"><a href="https://scholar.google.com/citations?user=I3eabQUAAAAJ&hl=en"
+        target="_blank">JingJing Shen</a></span>&nbsp;&nbsp;
+    <span class="author-block"><a href="https://scholar.google.com/citations?user=EEre0EcAAAAJ&hl=en"
+        target="_blank">Jonathan Taylor</a></span>&nbsp;&nbsp;
+    <span class="author-block"><a href="https://scholar.google.com/citations?user=DB8aKRgAAAAJ&hl=en"
+        target="_blank">Mingsong Dou</a></span>
+    </div>
+<div class="is-size-5 publication-authors" style="margin-top: 15px;">
+  <span class="author-block">Google XR</span>
+</div>
+    
+
+          <div class="column has-text-centered">
+            <div class="publication-links" style="margin-top: 15px; margin-bottom: 2px">
+              <span class="link-block">
+                <a href="./assets/paper.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay controls muted loop playsinline width="100%" style="border-radius: 15px; border: 1.5px solid #000; overflow: hidden;">
+        <source src="./assets/videos/paper_summary_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h2 class="subtitle has-text-centered" style="margin-top: 25px; font-size: 1.15rem; line-height: 1.6;">
+        <strong>VEPHand</strong> is an end-to-end pipeline for high-fidelity dynamic hand performance capture and registration from view-efficient setups (~20 cameras). By combining a mask-free neural reconstruction method with a physics-inspired volumetric registration framework, it robustly captures detailed hand geometry, appearance, and non-linear skin deformations across single-hand, two-hand, and hand-object interaction scenarios.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top: 0px; padding-bottom: 40px;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="margin-top: 0px; margin-bottom: 25px;">Pipeline Overview</h2>
+        <div class="content has-text-centered" style="margin-bottom: 30px;">
+          <img src="assets/images/pipeline.png" alt="VEPHand System Pipeline" style="border-radius: 10px; border: 1.5px solid #ddd; max-width: 100%;">
+        </div>
+        <div class="content has-text-justified" style="font-size: 1.05rem; line-height: 1.7; color: #333;">
+          <p>
+            <strong>VEPHand</strong> is an end-to-end automated pipeline that captures high-fidelity 3D/4D hand performances and hand-object interactions from practical view-efficient setups (~20 cameras) without requiring templates or intrusive markers. 
+          </p>
+          <p>
+            The pipeline operates in two primary stages:
+          </p>
+          <ul>
+            <li>
+              <strong>Mask-Free Neural Reconstruction:</strong> Overcomes sparse view overlap and background clutter by using a non-SDF density-based representation with scenario-specific density regularization to robustly extract detailed hand geometry and appearance.
+            </li>
+            <li>
+              <strong>Physics-Inspired Volumetric Registration:</strong> Aligns the neural reconstructions to a parametric hand template by optimizing intrinsic canonical offsets on personalized tetrahedral meshes. This captures fine surface deformations and ensures physically plausible results during self-contact.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Hand Deformation Model Section -->
+<section class="section" style="padding-bottom: 40px; padding-top: 0px;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 has-text-centered" style="margin-top: 0px; margin-bottom: 25px;">Dual-Component Volumetric Deformation Model</h2>
+        
+        <div class="content has-text-centered" style="margin-bottom: 25px;">
+          <img src="assets/images/hand_deformation.gif" alt="Hand Deformation Model" style="border-radius: 15px; border: 1.5px solid #000; overflow: hidden; max-width: 100%;">
+        </div>
+
+        <div class="content has-text-justified" style="font-size: 1.05rem; line-height: 1.7; color: #333;">
+          <p>
+            To capture fine-scale dynamic deformations and prevent physical implausibility (like volume loss at joints or self-collisions), <strong>VEPHand</strong> employs a physics-inspired personalized volumetric deformation framework:
+          </p>
+          <ol style="margin-top: 10px;">
+            <li style="margin-bottom: 10px;">
+              <strong>Canonical Volumetric Deformation:</strong> Fine-grained, non-linear shape changes are captured by optimizing
+              canonical offsets (&Delta;<sup>c</sup>) on the template's underlying tetrahedral mesh.
+            </li>
+            <li style="margin-bottom: 10px;">
+              <strong>Parametric Surface Refinement:</strong> Pose-dependent corrective blendshapes are applied to the canonical
+              surface to correct standard skinning artifacts.
+            </li>
+            <li style="margin-bottom: 0px;">
+              <strong>Global Skeletal Articulation:</strong> The final articulated hand pose is obtained by deforming the refined canonical surface via Linear Blend Skinning (LBS), driven by skeletal pose parameters (&beta;).
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Interactive 3D Visualizer Section -->
+<section class="section" style="padding-bottom: 40px; padding-top: 0px;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <div class="viewer-shell" id="interactive-viewer">
+          <div class="viewer-header">
+            <h2 class="title is-3 has-text-centered" style="margin-bottom: 8px;">Interactive 3D Visualizer</h2>
+            <div class="has-text-centered" style="color: #555; margin-bottom: 20px;">
+              Interactive 3D reconstruction showing registration results.
+            </div>
+          </div>
+          <div class="viewer-stage">
+            <div id="arxiv-viewer"></div>
+          </div>
+          <div id="arxiv-thumbnail-gallery" class="arxiv-thumbnail-gallery"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <div class="content has-text-justified">
+      <p>
+        If you find our work useful, please cite our paper:
+      </p>
+    </div>
+    <pre><code>@@inproceedings{todo
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer" style="padding: 3rem 1.5rem 3rem;">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content has-text-centered">
+          <p style="font-size: 0.9rem; color: #555;">
+            This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p style="font-size: 0.9rem; color: #777; margin-top: 10px;">
+            This webpage template is adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="./viewer-init-arxiv.js"></script>
+
+</body>
+</html>

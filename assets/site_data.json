@@ -1,0 +1,313 @@
+{
+  "viewerSequences": [
+    {
+      "key": "seq1",
+      "label": "seq1",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq1/thumbnail.png",
+      "metadataPath": "assets/interactive/seq1/metadata.json"
+    },
+    {
+      "key": "seq2",
+      "label": "seq2",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq2/thumbnail.png",
+      "metadataPath": "assets/interactive/seq2/metadata.json"
+    },
+    {
+      "key": "seq3",
+      "label": "seq3",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq3/thumbnail.png",
+      "metadataPath": "assets/interactive/seq3/metadata.json"
+    },
+    {
+      "key": "seq4",
+      "label": "seq4",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq4/thumbnail.png",
+      "metadataPath": "assets/interactive/seq4/metadata.json"
+    },
+    {
+      "key": "seq5",
+      "label": "seq5",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq5/thumbnail.png",
+      "metadataPath": "assets/interactive/seq5/metadata.json"
+    },
+    {
+      "key": "seq6",
+      "label": "seq6",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq6/thumbnail.png",
+      "metadataPath": "assets/interactive/seq6/metadata.json"
+    },
+    {
+      "key": "seq7",
+      "label": "seq7",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq7/thumbnail.png",
+      "metadataPath": "assets/interactive/seq7/metadata.json"
+    },
+    {
+      "key": "seq8",
+      "label": "seq8",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq8/thumbnail.png",
+      "metadataPath": "assets/interactive/seq8/metadata.json"
+    },
+    {
+      "key": "seq9",
+      "label": "seq9",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq9/thumbnail.png",
+      "metadataPath": "assets/interactive/seq9/metadata.json"
+    },
+    {
+      "key": "seq10",
+      "label": "seq10",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq10/thumbnail.png",
+      "metadataPath": "assets/interactive/seq10/metadata.json"
+    },
+    {
+      "key": "seq11",
+      "label": "seq11",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq11/thumbnail.png",
+      "metadataPath": "assets/interactive/seq11/metadata.json"
+    },
+    {
+      "key": "seq12",
+      "label": "seq12",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq12/thumbnail.png",
+      "metadataPath": "assets/interactive/seq12/metadata.json"
+    },
+    {
+      "key": "seq13",
+      "label": "seq13",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq13/thumbnail.png",
+      "metadataPath": "assets/interactive/seq13/metadata.json"
+    },
+    {
+      "key": "seq14",
+      "label": "seq14",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq14/thumbnail.png",
+      "metadataPath": "assets/interactive/seq14/metadata.json"
+    },
+    {
+      "key": "seq15",
+      "label": "seq15",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq15/thumbnail.png",
+      "metadataPath": "assets/interactive/seq15/metadata.json"
+    },
+    {
+      "key": "seq16",
+      "label": "seq16",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq16/thumbnail.png",
+      "metadataPath": "assets/interactive/seq16/metadata.json"
+    },
+    {
+      "key": "seq17",
+      "label": "seq17",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq17/thumbnail.png",
+      "metadataPath": "assets/interactive/seq17/metadata.json"
+    },
+    {
+      "key": "seq18",
+      "label": "seq18",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq18/thumbnail.png",
+      "metadataPath": "assets/interactive/seq18/metadata.json"
+    },
+    {
+      "key": "seq19",
+      "label": "seq19",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq19/thumbnail.png",
+      "metadataPath": "assets/interactive/seq19/metadata.json"
+    },
+    {
+      "key": "seq20",
+      "label": "seq20",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq20/thumbnail.png",
+      "metadataPath": "assets/interactive/seq20/metadata.json"
+    },
+    {
+      "key": "seq21",
+      "label": "seq21",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq21/thumbnail.png",
+      "metadataPath": "assets/interactive/seq21/metadata.json"
+    },
+    {
+      "key": "seq22",
+      "label": "seq22",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq22/thumbnail.png",
+      "metadataPath": "assets/interactive/seq22/metadata.json"
+    },
+    {
+      "key": "seq23",
+      "label": "seq23",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq23/thumbnail.png",
+      "metadataPath": "assets/interactive/seq23/metadata.json"
+    },
+    {
+      "key": "seq24",
+      "label": "seq24",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq24/thumbnail.png",
+      "metadataPath": "assets/interactive/seq24/metadata.json"
+    },
+    {
+      "key": "seq25",
+      "label": "seq25",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq25/thumbnail.png",
+      "metadataPath": "assets/interactive/seq25/metadata.json"
+    },
+    {
+      "key": "seq26",
+      "label": "seq26",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq26/thumbnail.png",
+      "metadataPath": "assets/interactive/seq26/metadata.json"
+    },
+    {
+      "key": "seq27",
+      "label": "seq27",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq27/thumbnail.png",
+      "metadataPath": "assets/interactive/seq27/metadata.json"
+    },
+    {
+      "key": "seq28",
+      "label": "seq28",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq28/thumbnail.png",
+      "metadataPath": "assets/interactive/seq28/metadata.json"
+    },
+    {
+      "key": "seq29",
+      "label": "seq29",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq29/thumbnail.png",
+      "metadataPath": "assets/interactive/seq29/metadata.json"
+    },
+    {
+      "key": "seq30",
+      "label": "seq30",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq30/thumbnail.png",
+      "metadataPath": "assets/interactive/seq30/metadata.json"
+    },
+    {
+      "key": "seq31",
+      "label": "seq31",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq31/thumbnail.png",
+      "metadataPath": "assets/interactive/seq31/metadata.json"
+    },
+    {
+      "key": "seq32",
+      "label": "seq32",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq32/thumbnail.png",
+      "metadataPath": "assets/interactive/seq32/metadata.json"
+    },
+    {
+      "key": "seq33",
+      "label": "seq33",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq33/thumbnail.png",
+      "metadataPath": "assets/interactive/seq33/metadata.json"
+    },
+    {
+      "key": "seq34",
+      "label": "seq34",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq34/thumbnail.png",
+      "metadataPath": "assets/interactive/seq34/metadata.json"
+    },
+    {
+      "key": "seq35",
+      "label": "seq35",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq35/thumbnail.png",
+      "metadataPath": "assets/interactive/seq35/metadata.json"
+    },
+    {
+      "key": "seq36",
+      "label": "seq36",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq36/thumbnail.png",
+      "metadataPath": "assets/interactive/seq36/metadata.json"
+    },
+    {
+      "key": "seq37",
+      "label": "seq37",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq37/thumbnail.png",
+      "metadataPath": "assets/interactive/seq37/metadata.json"
+    },
+
+    {
+      "key": "seq39",
+      "label": "seq39",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq39/thumbnail.png",
+      "metadataPath": "assets/interactive/seq39/metadata.json"
+    },
+    {
+      "key": "seq40",
+      "label": "seq40",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq40/thumbnail.png",
+      "metadataPath": "assets/interactive/seq40/metadata.json"
+    },
+    {
+      "key": "seq41",
+      "label": "seq41",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq41/thumbnail.png",
+      "metadataPath": "assets/interactive/seq41/metadata.json"
+    },
+    {
+      "key": "seq42",
+      "label": "seq42",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq42/thumbnail.png",
+      "metadataPath": "assets/interactive/seq42/metadata.json"
+    },
+    {
+      "key": "seq43",
+      "label": "seq43",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq43/thumbnail.png",
+      "metadataPath": "assets/interactive/seq43/metadata.json"
+    },
+    {
+      "key": "seq44",
+      "label": "seq44",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq44/thumbnail.png",
+      "metadataPath": "assets/interactive/seq44/metadata.json"
+    },
+    {
+      "key": "seq45",
+      "label": "seq45",
+      "dataset": "VEPHand",
+      "thumbnail": "assets/interactive/seq45/thumbnail.png",
+      "metadataPath": "assets/interactive/seq45/metadata.json"
+    }
+  ]
+}
